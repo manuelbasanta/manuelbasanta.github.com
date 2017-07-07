@@ -1,0 +1,90 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top:30px;
+
+}
+
+#icon {
+    position: absolute;
+    margin: 0 auto;
+    top: 7px;
+    left: 55px;
+    margin: auto;
+    margin-top: 0px;
+    display: none;
+}
+
+#wiki {
+    font-size: 70px;
+}
+
+#rand {
+    padding: 5px;
+    transition: background-color .2s ease-out, color .2s ease-out;
+    border-radius: 20px;
+    margin: 0;
+    position: relative;
+}
+
+#rand:hover {
+    background-color: black;
+}
+
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+#search {
+    margin-top: 20px;
+}
+#img {
+    width: 20px;
+    display: none;
+}
+.tado:hover {
+    color:white;
+    cursor: pointer;
+}
+.tado {
+    width: 300px;
+}
+.todo {
+    width: 300px;
+    margin: 10px auto 10px auto;
+    padding:5px;
+    background-color: #e0e2e5;
+}
+.todo:hover {
+    
+}
+.desc {
+    margin-top: 10px;
+    display: none;
+}
+.bot {
+    text-align: right;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+input { 
+    padding: 5px;
+    text-align: center;
+}
