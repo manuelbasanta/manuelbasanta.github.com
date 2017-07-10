@@ -17,16 +17,7 @@ $(document).ready(function () {
                 $("#author").html(data.author);
                 $("#tw").html("<a class=\x22twitter-share-button\x22" +
                     "href=\x22https://twitter.com/intent/tweet?text=" + "'" + data.quote + "'  " + data.author + "\x22" + " " + "target=\x22_blank\x22><i class=\x22fa fa-twitter iconos\x22" + "aria-hidden=\x22true\x22></i></a>");
-            }
-        });
-
-    };
-
-    frase();
-
-    $("#new").on("click", function () {
-        frase();
-        $("#quotes").animate({
+                        $("#quotes").animate({
                 opacity: 0
             }, 500,
             function () {
@@ -44,6 +35,16 @@ $(document).ready(function () {
                 }, 500);
 
             });
+            }
+        });
+
+    };
+
+    frase();
+
+    $("#new").on("click", function () {
+        frase();
+
 
     });
 });
