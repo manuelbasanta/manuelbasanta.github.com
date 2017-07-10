@@ -81,15 +81,9 @@ $(document).ready(function () {
         }
     });
     $("#refresh").click(function () {
-        $("section").animate({
-                backgroundColor: colors[num % colors.length][1],
-            }, 500);
-        $("body").animate({
-                backgroundColor: colors[num % colors.length][0],
-            }, 500);
-
         $("section").css("color", colors[num % colors.length][0]);
-
+        $("section").css("background-color", colors[num % colors.length][1]);
+        $("body").css("background-color", colors[num % colors.length][0]);
         num++;
     });
     $(".vert").delay(1500).fadeIn(1000);
