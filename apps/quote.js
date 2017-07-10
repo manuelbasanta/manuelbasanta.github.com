@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var color = true;
+
 
     function frase() {
 
@@ -26,23 +26,6 @@ $(document).ready(function () {
 
     $("#new").on("click", function () {
         frase();
-        console.log(color);
-        if (color) {
-            $(".par").animate({
-                backgroundColor: "black",
-            }, 500);
-
-            $(".par").css("color", "white");
-            $("#tw").css("color", "white");
-            color = false;
-        } else {
-            $(".par").animate({
-                backgroundColor: 'white',
-            }, 500);
-            $(".par").css("color", "black");
-            $("#tw").css("color", "black");
-            color = true;
-        }
         $("#quotes").animate({
                 opacity: 0
             }, 500,
