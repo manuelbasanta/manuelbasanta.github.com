@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    var color = true;
 
     function frase() {
 
@@ -13,29 +13,37 @@ $(document).ready(function () {
 
             success: function (data) {
 
-                
+                $("#quotes").html('"' + data.quote + '"');
+                $("#author").html(data.author);
                 $("#tw").html("<a class=\x22twitter-share-button\x22" +
                     "href=\x22https://twitter.com/intent/tweet?text=" + "'" + data.quote + "'  " + data.author + "\x22" + " " + "target=\x22_blank\x22><i class=\x22fa fa-twitter iconos\x22" + "aria-hidden=\x22true\x22></i></a>");
-                        $("#quotes").animate({
-                opacity: 0
-            }, 500,
-            function () {
+                
+                        if (color) {
+            $(".par").animate({
+                backgroundColor: "black",
+            }, 500);
+
+            $(".par").css("color", "white");
+            $("#tw").css("color", "white");
+            color = false;
+        } else {
+            $(".par").animate({
+                backgroundColor: 'white',
+            }, 500);
+            $(".par").css("color", "black");
+            $("#tw").css("color", "black");
+            color = true;
+        }
+        
                 $("#quotes").animate({
                     opacity: 1
                 }, 500);
 
-            });
-        $("#author").animate({
-                opacity: 0
-            }, 500,
-            function () {
-            $("#quotes").html('"' + data.quote + '"');
-                $("#author").html(data.author);
+
                 $("#author").animate({
                     opacity: 1
                 }, 500);
 
-            });
             }
         });
 
@@ -44,8 +52,12 @@ $(document).ready(function () {
     frase();
 
     $("#new").on("click", function () {
+        $("#author").animate({
+                opacity: 0
+            }, 500);
+        $("#quotes").animate({
+                opacity: 0
+            }, 500);
         frase();
-
-
     });
 });
