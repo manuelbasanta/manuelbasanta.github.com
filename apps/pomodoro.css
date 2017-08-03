@@ -27,6 +27,7 @@ h1 {
     border-radius: 100px;
     height: 100px;
     width: 100px;
+
     display: flex;
     align-content: center;
     justify-content: center;
@@ -39,9 +40,18 @@ h1 {
     width: 0px;
     opacity: .5;
     text-align: center;
-    position: fixed;
+    position: absolute;
     background-color:  #C60B1E;
     border-radius: 100px;
+}
+#linea {
+    opacity: 0.1;
+    width: 25px;
+    background-color:  #C60B1E;
+    padding: 5px;
+    border-radius: 100px;
+    margin-top: 10px;
+    display: none;
 }
 
 #set {
@@ -113,4 +123,12 @@ input, button, submit
 #settimer {
     margin-top: 10px;
     font-size: 25px;
+}
+@media (max-width: 1024px) {
+    #flecha {
+        display: none;
+    }
+    #linea {
+        display:block;
+    }
 }

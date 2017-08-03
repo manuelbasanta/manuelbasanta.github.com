@@ -34,6 +34,12 @@ function start() {
                 rojo = true;
             }
             
+            $("#linea").animate({
+                opacity: 1,
+            }, 500);
+            $("#linea").animate({
+                opacity: 0.1,
+            }, 500);
 
 
 
