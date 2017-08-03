@@ -12,15 +12,18 @@ var colors = [
 ]
 var num = 0;
 $(document).ready(function () {
+
     $.ajax({
         url: "https://freegeoip.net/json/",
         cache: false,
         success: function (data) {
-            var http = "https://crossorigin.me/https://api.darksky.net/forecast/4b8e6f483e6384d36bec88117b24402d/" + data.latitude + "," + data.longitude + "?units=si";
+            var http = "https://api.darksky.net/forecast/4b8e6f483e6384d36bec88117b24402d/" + data.latitude + "," + data.longitude + "?units=si";
 
             $.ajax({
                 url: http,
                 cache: false,
+                crossDomain: true,
+                dataType: 'jsonp',
                 success: function (json) {
                     var location = (json.timezone).split("/");
                     var city = data.city;
@@ -62,7 +65,7 @@ $(document).ready(function () {
                             $("#icono").html("<i class=\"wi wi-na\"></i>");
                     }
                     temperatura = parseFloat((json.currently.temperature).toFixed(1));
-                    $("#temp").html(temperatura + "°C");
+                    $("#temp").html(temperatura + "C");
                     $("#city").html(city);
                     $("#sumary").html(json.currently.summary);
                     var date = new Date(json.currently.time * 1000);
@@ -95,12 +98,12 @@ $(document).ready(function () {
     $(".vert").delay(1500).fadeIn(1000);
     $("#C").click(function () {
 
-        $("#temp").html(temperatura + "°C");
+        $("#temp").html(temperatura + "C");
 
 
     });
     $("#F").click(function () {
-        $("#temp").html(parseFloat(((9 / 5) * temperatura + 32).toFixed(1)) + "°F");
+        $("#temp").html(parseFloat(((9 / 5) * temperatura + 32).toFixed(1)) + "F");
 
     });
 
