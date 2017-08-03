@@ -23,10 +23,12 @@ $(document).ready(function () {
          $("#results").toggle("slow");
          $("#img").show();
 
-         var http = "https://crossorigin.me/https://en.wikipedia.org/w/api.php?action=opensearch&search=" + form.aca.value + "&limit=5&namespace=0&format=json";
+         var http = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + form.aca.value + "&limit=5&namespace=0&format=json";
          $.ajax({
              url: http,
              cache: false,
+             crossDomain: true,
+             dataType: 'jsonp',
              success: function (json) {
                  $("#img").hide();
                  if (json[1].length == 0) {
@@ -38,8 +40,7 @@ $(document).ready(function () {
                      }
                      $("#results").fadeIn("slow");
                  }
-             }
-
+             },
          });
 
 
