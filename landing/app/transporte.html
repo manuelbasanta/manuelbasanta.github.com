@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FADU FAST APP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/estilos.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/icono.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+
+    <section class="pag2">
+        <header>
+            <nav class="barra-nav">
+                <a href="estadomar.html">
+                    <p class="FF"><i><b>FADU</b> FAST</i></p>
+                </a>
+                <div id="flotar">
+
+                    <a href="calendario.html"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></a>
+                    <a href="perfil.html"> <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                </div>
+            </nav>
+
+
+        </header>
+
+        <div class="header">
+            <i class="fa fa-times-circle-o arrow-down  red topicon" aria-hidden="true"></i>
+
+            <div class="subdiv">
+                <p class="fecha2 estado">ESTADO DE</p>
+                <p class="fecha tipo">TRANSPORTE</p>
+            </div>
+
+        </div>
+        <ul class="dias">
+            <a href="transporte.html">
+                <li>LUN</li>
+            </a>
+            <li id="mart">MAR</li>
+            <a href="transporte.html">
+                <li>MIE</li>
+            </a>
+            <a href="transporte.html">
+                <li>JUE</li>
+            </a>
+            <a href="transporte.html">
+                <li>VIE</li>
+            </a>
+            <a href="transporte.html">
+                <li>SAB</li>
+            </a>
+        </ul>
+
+        <div id="barratrans">
+            <i class="fa fa-bus trans selected" aria-hidden="true"></i>
+            <i class="fa fa-train trans" aria-hidden="true"></i>
+            <i class="fa fa-car trans" aria-hidden="true"></i>
+        </div>
+        <div class="transporte" id="colec">
+
+
+            <h2>COLECTIVOS</h2>
+            <!--seccion colectivo -->
+
+            <ul>
+                <li id="libondimal">
+                    <p class="circ redback"></p>Línea 28</li>
+                <!--estado rojo -->
+                <li class="libondiok">
+                    <p class="circ greenback"></p>Línea 33</li>
+                <!--estado verde-->
+                <li class="libondiok">
+                    <p class="circ greenback"></p>Línea 37</li>
+                <!--estado verde-->
+                <li class="libondiok">
+                    <p class="circ greenback"></p>Línea 42</li>
+                <!--estado verde-->
+                <li class="libondiok">
+                    <p class="circ greenback"></p>Línea 45</li>
+                <!--estado verde-->
+                <li class="libondiok">
+                    <p class="circ greenback"></p>Línea 107</li>
+                <!--estado verde-->
+                <li class="libondim">
+                    <p class="circ yellowback"></p>Línea 160</li>
+                <!--estado amarillo -->
+
+            </ul>
+
+        </div>
+
+        <div class="transporte" id="tren">
+
+            <h2>TREN</h2>
+            <!--seccion tren -->
+
+
+            <ul>
+                <li class="libondiok">
+                    <p class="circ greenback"></p>Línea Belgrano </li>
+            </ul>
+            <!--estado verde-->
+
+
+        </div>
+
+        <div class="transporte" id="auto">
+
+            <h2>PARTICULARES</h2>
+            <!--seccion particulares -->
+
+
+            <ul>
+                <li class="libondiok">
+                    <p class="circ greenback"></p>Autos </li>
+                <!--estado verde-->
+                <li class="libondiok">
+                    <p class="circ greenback"></p>Motos </li>
+                <!--estado verde-->
+                <li class="bicimal">
+                    <p class="circ yellowback"></p>Bicicletas </li>
+                <!--estado rojo-->
+
+
+            </ul>
+        </div>
+        <div class="pop" id="bondimal">
+            <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+            <p style="font-size:35px;">Paro de línea</p>
+            <p class="cerrar">Cerrar</p>
+        </div>
+        <div class="pop" id="bondiok">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            <p style="font-size:35px;">Estado normal</p>
+            <p class="cerrar">Cerrar</p>
+        </div>
+        <div class="pop" id="bondim">
+            <p id="admi">!</p>
+            <p style="font-size:35px;">Demora por corte</p>
+            <p class="cerrar">Cerrar</p>
+        </div>
+        <div class="pop" id="bicimal">
+            <p id="admi">!</p>
+            <p style="font-size:35px;">Corte por repavimentación</p>
+            <p class="cerrar">Cerrar</p>
+        </div>
+        
+
+
+    </section>
+
+
+
+
+
+</body>
+
+</html>

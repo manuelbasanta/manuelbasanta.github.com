@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,700,900');
+
+/****************************
+     ESTILOS GENERALES
+****************************/
+
+section {
+    max-width: 480px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    background-color: #13a8ea;
+    height: 760px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+i {
+    color: white;
+    line-height: 35px;
+    margin: 0 10px 0 0;
+}
+
+#flotar {
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.barra-nav {
+    background-color: #275f90;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    line-height: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.puntos {
+    margin: 0;
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 300;
+    color: #505050;
+}
+
+.sub1 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #505050;
+}
+
+.sub2 {
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 0px;
+    color: #505050;
+}
+
+.btn {
+    margin: 15px 0px 15px 0px;
+    border-style: none;
+}
+
+#centro {
+    background-color: #efefef;
+    width: 80%;
+    height: 580px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 30px 10px 10px 10px;
+    display: none;
+}
+
+#logo {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.boton1 {
+    width: 40%;
+    height: 40px;
+    background-color: #4a8bb5;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 40px;
+    color: white;
+    margin: 5% auto;
+    cursor: pointer;
+}
+
+.boton2 {
+    width: 60%;
+    height: 40px;
+    background-color: #75c1f2;
+    text-align: left;
+    border-radius: 5px;
+    line-height: 40px;
+    color: white;
+    margin: 8px auto 8px auto;
+    padding-left: 15px;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+.h1 {
+    color: #132539;
+}
+
+
+/****************************
+            PAGINA 00
+****************************/
+
+.texto-exp {
+    max-width: 80%;
+    margin: 30px auto 30px auto;
+    color: white;
+    font-size: 18px;
+}
+
+#logo00 {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.carg00 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+
+/****************************
+            PAG1
+****************************/
+
+.pag1 {
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+    margin: auto;
+    background-color: #fcfcfc;
+    height: 760px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dias {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 30px 0;
+    list-style: none;
+    display: inline-flex;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    justify-content: center;
+}
+
+.dias a li {
+    margin: 0.5em 1em 0.5em 1em;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#mart {
+    font-weight: 900;
+    color: #dd4a50;
+    margin: 0.5em 1em 0.5em 1em;
+    font-size: 14px;
+}
+
+#lun {
+    font-weight: 900;
+    color: #ffd526;
+    margin: 0.5em 1em 0.5em 1em;
+    font-size: 14px;
+}
+
+#jue {
+    font-weight: 900;
+    color: #30a88c;
+    margin: 0.5em 1em 0.5em 1em;
+    font-size: 14px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    margin-bottom: 0px;
+    margin-top: 60px;
+}
+
+.FF {
+    margin: auto auto auto 10px;
+}
+
+.drop-down {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    width: 100%;
+}
+
+.recuadro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+    background-color: #fff;
+    transition: background .3s ease-in, border-left .3s ease-in;
+    background: linear-gradient(rgba(235, 235, 235, 0.4), rgba(19, 169, 236, 0));
+    border-left: 6px solid #275f90;
+    border-bottom: 3px dotted #e0e0e0;
+    height: 150px;
+    cursor: pointer;
+}
+
+.recuadro:hover {
+    background: #b4d0ea;
+    color: white;
+    border-left: 6px solid #275f90;
+}
+
+.arrow-down {
+    float: right;
+    color: #5a5a5a;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.fecha {
+    font-size: 42px;
+    margin: 0 15px 0 15px;
+}
+
+.texto1 {
+    margin: 0px 0px 0px 15px;
+    font-size: 24px;
+    font-weight: 900px;
+    color: #343434;
+}
+
+.texto2 {
+    margin: 0px 0px 0px 15px;
+    font-size: 16px;
+    font-weight: 700px;
+    color: #8d8d8d;
+}
+
+.texto3 {
+    margin: 10px 0px 0px 15px;
+    font-size: 12px;
+    color: #8d8d8d;
+}
+
+.red {
+    color: #dd4a50;
+}
+
+.yellow {
+    color: #ffd526;
+}
+
+.green {
+    color: #30a88c;
+}
+
+.note {
+    color: #000000;
+}
+
+.recinf {
+    height: 30px;
+    background: linear-gradient(rgba(235, 235, 235, 0.4), rgba(19, 169, 236, 0));
+}
+
+#gato-estado {
+    width: 30%;
+}
+
+
+/****************************
+            CURSADA
+****************************/
+
+.pag2 {
+    max-width: 480px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    background-color: #fcfcfc;
+    height: 760px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bloque {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    background-color: #fff;
+    transition: background .3s ease-in, border-left .3s ease-in;
+    background: linear-gradient(rgba(235, 235, 235, 0.4), rgba(19, 169, 236, 0));
+    border-left: 6px solid #30a88c;
+    border-right: 6px solid #30a88c;
+    margin-top: 5px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.bloque-red {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    background-color: #fff;
+    transition: background .3s ease-in, border-left .3s ease-in;
+    background: linear-gradient(rgba(235, 235, 235, 0.4), rgba(19, 169, 236, 0));
+    border-left: 6px solid #dd4a50;
+    border-right: 6px solid #dd4a50;
+    margin-top: 5px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.bloque-yel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    background-color: #fff;
+    transition: background .3s ease-in, border-left .3s ease-in;
+    background: linear-gradient(rgba(235, 235, 235, 0.4), rgba(19, 169, 236, 0));
+    border-left: 6px solid #ffd526;
+    border-right: 6px solid #ffd526;
+    margin-top: 5px;
+    height: 150px;
+    cursor: pointer;
+}
+
+
+
+.subdiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+    margin-bottom: 15px;
+}
+
+.estado {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 24px;
+    color: #5a5a5a;
+    line-height: 24px;
+}
+
+.tipo {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 38px;
+    line-height: 38px;
+}
+
+.topicon {
+    font-size: 75px;
+    margin-bottom: 15px;
+}
+
+.materia {
+    color: #30a88c;
+}
+
+.materia-red {
+    color: #dd4a50;
+}
+
+.materia-yel {
+    color: #ffd526;
+}
+
+
+
+/****************************
+        RECORDATORIOS
+****************************/
+
+textarea {
+    width: 80%;
+    height: 350px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+#tags {
+    margin: 0 auto;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-around;
+}
+
+.tagy {
+    background-color: #f7e98a;
+    border-radius: 10px;
+    padding: 0px 5px 0px 5px;
+    margin-left: 5px;
+    color: #597a96;
+}
+
+.tagb {
+    background-color: #8ad2f7;
+    border-radius: 10px;
+    padding: 0px 5px 0px 5px;
+    margin-left: 5px;
+    color: #597a96;
+}
+
+.tagy:hover,
+.tagb:hover,
+.cerrar:hover,
+#guardar:hover {
+    cursor: pointer;
+}
+
+.tagtit {
+    text-align: left;
+    margin-left: 63px;
+}
+
+#guardar {
+    background-color: #12aaeb;
+    border-radius: 10px;
+    width: 90px;
+    margin: 0px auto 20px auto;
+    color: white;
+}
+
+.icorec {
+    font-size: 17px;
+    color: black;
+}
+
+#NN {
+    margin-top: 30px;
+}
+
+.pop {
+    position: absolute;
+    top: 230px;
+    left: 35px;
+    width: 85%;
+    background-color: rgb(18, 170, 235);
+    display: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.fa-check {
+    color: #30a88c;
+    font-size: 150px;
+}
+
+.cerrar {
+    font-weight: 900;
+}
+#NN ::-webkit-input-placeholder {
+    color: #c9c3c3;
+}
+
+
+/****************************
+        CALENDARIO
+****************************/
+
+#calendario {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.fa-calendar {
+    color: rgb(18, 170, 235);
+    font-size: 60px;
+}
+
+.date {
+    padding: 3px;
+    transition: background-color .3s ease-out;
+}
+
+.date:hover {
+    background-color: #12aaeb;
+    color: white;
+    cursor: pointer;
+}
+
+td {
+    padding: 10px;
+}
+
+.fa-caret-up {
+    color: #12aaeb;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.selec {
+    margin: 20px auto 0px auto;
+    border-radius: 20px;
+    color: white;
+    padding: 0;
+    width: 50%;
+    color: #12aaeb;
+}
+
+
+/****************************
+        PROFILE
+****************************/
+
+#avatar {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #12aaeb;
+}
+
+.carrera ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.carrera ul li {
+    padding: 3px;
+    border-bottom: 1px solid #12aaeb;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.carrera ul li:hover {
+    cursor: pointer;
+    background-color: #12aaeb;
+    color: white;
+}
+
+#perfil {
+    background-color: #fcfcfc;
+}
+
+.name {
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.DG {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+#si {
+    border-top: 1px solid #12aaeb;
+}
+
+.cerrar {
+    padding: 3px;
+    font-size: 18px;
+    background-color: #12aaeb;
+    color: white;
+    width: 140px;
+    margin: 15px auto 0px auto;
+    border-radius: 10px;
+}
+
+
+/****************************
+     TRANSPORTE
+****************************/
+
+#barratrans {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+.trans {
+    color: #868889;
+    font-size: 40px;
+    padding: 5px;
+    margin: 0;
+    transition: color .3s ease-out;
+}
+.trans:hover {
+    color: #12aaeb;
+    cursor: pointer;
+}
+.transporte {
+    color: #868889;
+    text-align: left;
+    padding-left:  10%;
+
+}
+.transporte h2{
+        color: #12aaeb;
+}
+.transporte ul {
+    padding: 0;
+}
+
+.transporte ul li {
+    width: 50%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-around;
+    font-size: 15px;
+    padding: 1px;
+}
+.transporte ul li:hover {
+    color: #12aaeb;
+    cursor: pointer;
+}
+.circ {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0px 5px 0px 0px;
+}
+
+.redback {
+    background-color: #dd4a50;
+}
+
+.yellowback {
+    background-color: #ffd526;
+}
+
+.greenback {
+    background-color: #30a88c;
+}
+.selected {
+        border-bottom: 3px solid #12aaeb;
+}
+#colec {
+    display: inline;
+}
+#tren {
+    display: none;
+}
+#auto {
+    display: none;
+}
+
+.pop .fa-times-circle-o {
+    color: #dd4a50;
+    font-size: 150px;
+    
+}
+#admi {
+    font-size: 150px;
+    color: #ffd526;
+    margin: 0;
+}
+/****************************
+     RECORDATORIOS
+****************************/
+.tagr {
+    background-color: #f7e98a;
+    border-radius: 10px;
+    padding: 0px 5px 0px 5px;
+    margin: 0px 5px 0px 5px;
+    color: #597a96;
+    width: 85px;
+    float: right;
+}
+.recordtext {
+    text-align: left;
+}
+.record {
+    padding: 10px;
+    background-color: #c7c7c7;
+    margin: 10px;
+    border-radius: 5px;
+}
