@@ -30,7 +30,7 @@ body {
 
 .circled {
     clip-path: circle(50% at 50% 50%);
-    background-color: #95cc78;
+    background-color: #729a5d;
     margin: 5px;
     width: 90px;
     height: 90px;
@@ -248,5 +248,8 @@ body {
         clip-path: circle(50% at 50% 50%);
         background-color: #95cc78;
         cursor: pointer;
+    }
+    .circled {
+        background-color: #95cc78;
     }
 }
