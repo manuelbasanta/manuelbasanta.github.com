@@ -18,6 +18,7 @@ $(document).ready(function () {
     setTimeout(function () {
         $('.portfo').css('opacity', '1');
         $('.portfo').addClass('animated fadeInRight');
+        $('.homep').removeClass('fadeInRight').addClass('animated fadeInLeft');
         $('.homea').addClass('animated fadeInLeft');
         $('.homec').addClass('animated fadeInLeft');
         $('.homes').addClass('animated fadeInLeft');
@@ -29,6 +30,9 @@ $(document).ready(function () {
 
 
     $('.about').on('click', function () {
+        $(".mail").animate({
+            opacity: "0",
+        }, 300);
         $("body").animate({
             backgroundColor: "#8D6A9F",
         }, 500);
@@ -41,8 +45,11 @@ $(document).ready(function () {
 
 
     $('.skills').on('click', function () {
+        $(".mail").animate({
+            opacity: "0",
+        }, 300);
         $("body").animate({
-            backgroundColor: "#81E979",
+            backgroundColor: "#577590",
         }, 500);
 
         $('#home').fadeOut('fast', function () {
@@ -54,6 +61,9 @@ $(document).ready(function () {
 
 
     $('.portfo').on('click', function () {
+        $(".mail").animate({
+            opacity: "0",
+        }, 300);
         $("body").animate({
             backgroundColor: "#087F8C",
         }, 500);
@@ -67,14 +77,10 @@ $(document).ready(function () {
 
 
     $('.contact').on('click', function () {
-        $("body").animate({
-            backgroundColor: "#6B7FD7",
+
+        $(".mail").animate({
+            opacity: "1",
         }, 500);
-
-        $('#home').fadeOut('fast', function () {
-            $('.pantacontact').fadeIn('fast');
-
-        });
     });
 
     /************************************************
@@ -135,16 +141,5 @@ $(document).ready(function () {
         });
     });
 
-    /************************************************
-    ABOUT
-    ************************************************/
-    $('.homec').on('click', function () {
-        $("body").animate({
-            backgroundColor: "#DE6449",
-        }, 500);
 
-        $('.pantacontact').fadeOut('fast', function () {
-            $('#home').fadeIn('fast');
-        });
-    });
 });

@@ -13,7 +13,7 @@ body {
 
 .centro {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
@@ -64,6 +64,12 @@ HOME
     width: 250px;
 }
 
+.mail {
+    font-size: 25px;
+    margin-top: 30px;
+    opacity: 0;
+}
+
 
 /*********************************
 ABOUT
@@ -102,7 +108,9 @@ ABOUT
     opacity: .5;
 }
 
-#about p, #contact p, #skills p {
+#about p,
+#contact p,
+#skills p {
     font-size: 55px;
     margin: 0;
     padding: 0;
@@ -113,12 +121,12 @@ ABOUT
 }
 
 
-
 /*********************************
 SKILLS
 *********************************/
+
 .pantaskills {
-        display: flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -126,6 +134,7 @@ SKILLS
     align-content: flex-start;
     margin-top: 70px;
 }
+
 #skills {
     color: #E58C8A;
     text-align: center;
@@ -143,18 +152,20 @@ SKILLS
 
 .homes:hover {
     background-color: #E58C8A;
-    color: #81E979;
+    color: #577590;
     cursor: pointer;
 }
+
 .allbox {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
     max-width: 420px;
 }
+
 .skbox {
     width: 120px;
     height: 120px;
@@ -168,14 +179,13 @@ SKILLS
     width: 120px;
     height: 120px;
     background-color: #E58C8A;
-    color: #81E979;
+    color: #577590;
     display: none;
-    
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
 }
 
 .skicon {
@@ -186,9 +196,12 @@ SKILLS
     font-size: 100px;
 }
 
-.skicon:hover, .skdata:hover {
+.skicon:hover,
+.skdata:hover {
     cursor: pointer;
 }
+
+
 /*********************************
 PORTFOLIO
 *********************************/
@@ -225,7 +238,7 @@ PORTFOLIO
 .tbox {
     font-size: 25px;
     background-color: #62BCC4;
-    color: #E2EF70;
+    color: #087F8C;
     padding: 10px;
     width: 300px;
     height: 100px;
@@ -241,8 +254,8 @@ PORTFOLIO
 }
 
 .homep:hover {
-    background-color: #397176;
-    color: #E2EF70;
+    background-color: #62BCC4;
+    color: #087F8C;
 }
 
 .info {
@@ -262,33 +275,7 @@ PORTFOLIO
     width: 100%;
 }
 
-/*********************************
-CONTACT
-*********************************/
-#contact {
-    color: #DDFBD2;
-    text-align: center;
-}
-.homec {
-    border: 2px solid #DDFBD2;
-    margin: 5px;
-    padding: 5px;
-    font-size: 20px;
-    text-align: center;
-    transition: all .3s;
-    width: 100px;
-    margin: 0 auto 15px;
-}
 
-.homec:hover {
-    background-color: #DDFBD2;
-    color: #6B7FD7;
-    cursor: pointer;
-}
-.mail {
-    font-size: 30px;
-    margin: 100px;
-}
 /*********************************
 MEDIA
 *********************************/
@@ -323,7 +310,7 @@ MEDIA
         opacity: 1;
     }
     .mail {
-    font-size: 20px;
+        font-size: 20px;
     }
 }
 
