@@ -1,109 +1,26 @@
+/*********************************
+GENERAL
+*********************************/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
 body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #F96F5D;
+    font-family: 'Roboto Slab', serif;
+    background-color: #DE6449;
+    color: #031926;
+    position: relative;
     min-height: 100vh;
+}
+
+.centro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    position: absolute;
     width: 100%;
-}
-
-main {
-    background-color: #273D55;
-    color: #F96F5D;
-    display: flex;
-    padding: 20px;
-    width: 400px;
-    margin: 30px auto 0px auto;
-    flex-direction: column;
-}
-
-.name {
-    font-size: 40px;
-    margin: 0;
-}
-
-#front {
-    margin-top: 5px;
-    font-weight: 300;
-    text-align: right;
-    border-top: 2px solid #F96F5D;
-    padding: 5px;
-}
-
-.tit {
-    margin: 10px 5px 10px;
-    font-size: 30px;
-    background-color: #F96F5D;
-    color: #273D55;
-    padding: 10px;
-    transition: all .2s;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.tit:hover {
-    cursor: pointer;
-    background-color: #403F4C;
-    color: #e5f2f5;
-}
-.icocont {
-    font-size: 20px;
-}
-#trabajos {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.tbox {
-    width: 180px;
-    height: 180px;
-    background-color: #47688b;
-    margin: 5px;
-    padding: 5px;
-    color: #e5f2f5;
-    transition: all .2s;
-}
-
-.tbox:hover {
-    background-color: #F96F5D;
-    color: #273D55;
-}
-
-.app {
-    font-size: 30px;
-}
-
-.info {
-    margin-top: 10px;
-    font-size: 15px;
-}
-#forma, #contacto {
-    margin-left: 10px;
-}
-.carre {
-    font-size: 25px;
-}
-.fac {
-        margin-bottom: 10px;
-}
-#habi {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-.ico {
-    font-size: 50px;
-    margin: 15px;
-    color: #F96F5D;
-}
-@media (max-width: 400px) {
-    main {
-        width: 95vw;
-        padding: 5px;
-    }
+    height: 100%;
 }
 
 a:link {
@@ -116,4 +33,312 @@ a:visited {
     text-decoration: inherit;
     color: inherit;
     cursor: auto;
+}
+
+
+/*********************************
+HOME
+*********************************/
+
+.mb {
+    margin: 0;
+    font-size: 60px;
+}
+
+.fe {
+    font-weight: 100;
+    margin: 0;
+    font-size: 40px;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+.titel {
+    width: 250px;
+}
+
+
+/*********************************
+ABOUT
+*********************************/
+
+#about {
+    color: #DDA448;
+    text-align: center;
+}
+
+.homea {
+    border: 2px solid #DDA448;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    transition: all .3s;
+    width: 100px;
+    display: inline-block;
+    background-color: #8D6A9F;
+}
+
+.homea:hover {
+    background-color: #DDA448;
+    color: #8D6A9F;
+    cursor: pointer;
+}
+
+.dato {
+    font-size: 25px;
+}
+
+#about i {
+    font-size: 25px;
+    margin: 5px;
+    opacity: .5;
+}
+
+#about p, #contact p, #skills p {
+    font-size: 55px;
+    margin: 0;
+    padding: 0;
+}
+
+#about i:hover {
+    opacity: 1;
+}
+
+
+
+/*********************************
+SKILLS
+*********************************/
+.pantaskills {
+        display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    margin-top: 70px;
+}
+#skills {
+    color: #E58C8A;
+    text-align: center;
+}
+
+.homes {
+    border: 2px solid #E58C8A;
+    margin: 5px auto 5px auto;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    transition: all .3s;
+    width: 100px;
+}
+
+.homes:hover {
+    background-color: #E58C8A;
+    color: #81E979;
+    cursor: pointer;
+}
+.allbox {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: flex-start;
+    max-width: 420px;
+}
+.skbox {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    text-align: center;
+    margin: 10px;
+}
+
+.skdata {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #E58C8A;
+    color: #81E979;
+    display: none;
+    
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.skicon {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    color: #E58C8A;
+    font-size: 100px;
+}
+
+.skicon:hover, .skdata:hover {
+    cursor: pointer;
+}
+/*********************************
+PORTFOLIO
+*********************************/
+
+.bt {
+    border: 2px solid #031926;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.bt:hover {
+    background-color: #031926;
+    color: #DE6449;
+    cursor: pointer;
+}
+
+.pantaportfolio {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    color: #62BCC4;
+    font-size: 60px;
+    text-align: center;
+}
+
+.tbox {
+    font-size: 25px;
+    background-color: #62BCC4;
+    color: #E2EF70;
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    margin: 10px;
+    text-align: left;
+}
+
+.homep {
+    width: 100px;
+    margin: 0 auto;
+    border: 2px solid #62BCC4;
+}
+
+.homep:hover {
+    background-color: #397176;
+    color: #E2EF70;
+}
+
+.info {
+    position: absolute;
+    font-size: 15px;
+    display: none;
+}
+
+.trabajos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    max-width: 700px;
+    width: 100%;
+}
+
+/*********************************
+CONTACT
+*********************************/
+#contact {
+    color: #DDFBD2;
+    text-align: center;
+}
+.homec {
+    border: 2px solid #DDFBD2;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    transition: all .3s;
+    width: 100px;
+    margin: 0 auto 15px;
+}
+
+.homec:hover {
+    background-color: #DDFBD2;
+    color: #6B7FD7;
+    cursor: pointer;
+}
+.mail {
+    font-size: 30px;
+    margin: 100px;
+}
+/*********************************
+MEDIA
+*********************************/
+
+@media (max-width: 414px) {
+    #home {
+        flex-direction: column;
+    }
+    .titel {
+        text-align: center;
+    }
+    .menu {
+        display: flex;
+        margin-top: 10px;
+    }
+    .fe {
+        font-size: 25px;
+    }
+    .info {
+        display: block;
+    }
+    .tbox {
+        width: 250px;
+    }
+    .dato {
+        font-size: 20px;
+    }
+    #about {
+        padding: 10px;
+    }
+    #about i {
+        opacity: 1;
+    }
+    .mail {
+    font-size: 20px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .mb {
+        font-size: 100px;
+    }
+    .fe {
+        font-size: 60px;
+    }
+    .bt {
+        margin: 10px auto;
+        font-size: 30px;
+    }
+    .titel {
+        width: 400px;
+    }
 }
