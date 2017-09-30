@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700" rel="stylesheet">
+    <link href="wiki.css" rel="stylesheet" />
+    <script src="wiki.js"></script>
+    <title>Wikipedia viewer</title>
+</head>
+
+
+<body>
+    <main>
+        <i id="wiki" class="fa fa-wikipedia-w" aria-hidden="true"></i>
+
+        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+            <p id="rand"> Random article <i class="fa fa-random" aria-hidden="true" id="icon"></i></p>
+        </a>
+        <form id="search" action="javascript:;" method="get">
+            <input type="text" placeholder="Search on Wikipedia" name="aca" autocomplete="off">
+            
+        </form>
+        <br>
+        <img id="img" src="../img/loading.gif"/>
+        <div id="results">
+        </div>
+
+    </main>
+
+</body>
+
+</html>
+

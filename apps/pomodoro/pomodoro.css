@@ -1,0 +1,116 @@
+body {
+    background-color: #ffc400;
+    font-family: 'Domine', serif;
+    color: #C60B1E;
+}
+main {
+    border: 5px solid #C60B1E;
+    width: 300px;
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+#timer {
+    font-size: 30px;
+    color: white;
+    z-index: 1;
+    background-image: url(../img/tomateicon.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 5px solid rgba(198, 11, 30, .5);
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#flecha {
+    height: 0px;
+    width: 0px;
+    opacity: .5;
+    text-align: center;
+    position: fixed;
+    background-color:  #C60B1E;
+    border-radius: 100px;
+}
+
+#set {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+#set div {
+    margin: 5px;
+}
+.sim {
+    background-color: #C60B1E;
+    color: #ffc400;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.sim:hover {
+    background-color: white;
+    color: #C60B1E;
+    cursor: pointer;
+}
+.all {
+display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+.bot {
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+    background-color: #C60B1E;
+    color: #ffc400;
+    padding: 3px;
+    width: 70px;
+    text-align: center;
+    transition: all .2s;
+    font-size: 25px;
+}
+.bot:hover {
+    background-color: white;
+    color: #C60B1E;
+    cursor: pointer;
+}
+.conjunto{
+    width: 100px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+input, button, submit
+{
+  border:none;
+    list-style-type: none;
+    list-style: none;
+}
+#settimer {
+    margin-top: 10px;
+    font-size: 25px;
+}

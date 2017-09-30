@@ -1,0 +1,114 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    background-color: #F4B9B2;
+}
+main {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: stretch;
+}
+h1,h2 {
+    margin: 10px auto 10px auto;
+    text-align: center;
+    color: white;
+}
+section {
+    background-color: #7DBBC3;
+    padding: 10px;
+    margin-top:20px;
+    margin: 0 auto;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: stretch;
+}
+
+.cuadrado {
+    height: 50px;
+    width: 50px;
+    background-color: #ba938e;
+    margin: 5px;
+    color: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    transition: all .2s;
+}
+.cuadrado:hover {
+    background-color: white;
+    color: #ba938e;
+    cursor: pointer;
+}
+.rec {
+    height: 50px;
+    width: 110px;
+    background-color: #ba938e;
+    margin: 5px;
+    color: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    transition: all .2s;
+}
+.rec:hover {
+    background-color: white;
+    color: #ba938e;
+    cursor: pointer;
+}
+.rec2:hover {
+    background-color: white;
+    color: #ba938e;
+    cursor: pointer;
+}
+#AC:hover {
+    background-color: white;
+    color: #EF6F6C;
+    cursor: pointer;
+}
+.rec2 {
+    height: 110px;
+    width: 50px;
+    background-color: #ba938e;
+    margin: 5px;
+    color: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    transition: all .2s;
+}
+.screen {
+    height: 80px;
+    width: 225px;
+    padding-right: 5px;
+    background-color: #7b5c58;
+    margin: 5px;
+    color: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: stretch;
+    font-size: 25px;
+}
+
+#AC {
+    background-color: #EF6F6C;
+}

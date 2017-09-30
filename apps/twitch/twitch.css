@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    background-color: #FDB927;
+    min-height: 100vh;
+}
+
+#logo {
+    margin-top: 30px;
+    width: 270px;
+}
+
+#choose {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.togler {
+    margin: 0px 10px 0px 10px;
+    font-size: 20px;
+    color: white;
+    padding: 0px 3px 0px 3px;
+    transition: color .2s ease-out;
+}
+
+.togler:hover {
+    cursor: pointer;
+    color: #6441a5;
+}
+
+#todos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    margin-top: 10px;
+}
+
+.box {
+    width: 250px;
+    height: 70px;
+    background-color: #6441a5;
+    margin: 15px;
+    color: #FDB927;
+    font-size: 35px;
+    padding: 20px;
+    position: relative;
+}
+
+.int {
+    width: 250px;
+    height: 70px;
+    color: #6441a5;
+    position: absolute;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    font-size: 25px;
+    background-color: #FDB927;
+}
+
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+#clari {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+@media (max-width: 319px) {
+    .box {
+        width: 90%;
+    }
+    .int {
+        width: 85%;
+        font-size: 15vw;
+    }
+    #logo {
+        width: 80%;
+    }
+}

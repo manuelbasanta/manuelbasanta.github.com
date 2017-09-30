@@ -1,0 +1,54 @@
+<!DOCTYPE>
+
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="simon.css" rel="stylesheet">
+    <script src="simon.js"></script>
+    <title>Simon Game</title>
+</head>
+
+<body>
+    <div class="megawrap">
+        <div class="sides">
+            <div class="btn clicastart" id="start">Start</div>
+            <div class="btn" id="strict">Strict</div>
+            <div class="btn reset unclicableres">Reset</div>
+            <div id="score">Round:
+                <div class="score"> --</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="header">
+            </div>
+            <div class="row">
+                <div class="bot b1 unclicable noselect" id="1">1</div>
+                <div class="bot b2 unclicable noselect" id="2">2</div>
+            </div>
+            <div class="row">
+                <div class="bot b3 unclicable noselect" id="3">3</div>
+                <div class="bot b4 unclicable noselect" id="4">4</div>
+            </div>
+            <div class="center">
+            </div>
+            <div id="footer">
+            </div>
+        </div>
+        <div class="sides" id="cred">Simon Game.<br>
+            <p style="margin: 0;font-size: 20px;">by Manuel Basanta</p>
+        </div>
+    </div>
+    <div class="megawrap" id="congrats">
+        Congratulations, you won!
+        <div class="btn reset unclicableres">Reset</div>
+    </div>
+
+</body>
+
+</html>
