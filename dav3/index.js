@@ -69,22 +69,37 @@ var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
 var genesisResult;
 
 function generateBlock(e) {
+	// blockNum == 3 && animate();
 	let currentBlock = $('.grid-block').first();
 
 	chain.addBlock(new Block(blockNum, new Date().toLocaleDateString('es-AR', options) , e));
 
 
-	(chain.chain[blockNum].hash).match(/.{2}/g).forEach( element => {
+	(chain.chain[blockNum].hash).match(/.{2}/g).forEach( (element,index,array) => {
 
-		currentBlock.css('background-color', '#' + element + element + element);
+
+	currentBlock.animate({
+	    backgroundColor: '#' + element + element + element,
+	  }, 300, function() {
+	    // Animation complete.
+	    if (index == array.length - 1 ) {
+
+	    	let clone = $('.main .grid').clone();
+			chain.chain[blockNum].result = clone;
+			reWriteHistory(chain.chain[blockNum - 1]);
+			blockNum++;
+	    }
+
+	 });
+
+
+		//currentBlock.css('background-color', '#' + element + element + element);
 		currentBlock = currentBlock.next();
 
 	});
-	let clone = $('.main .grid').clone();
-	chain.chain[blockNum].result = clone;
-	reWriteHistory(chain.chain[blockNum - 1]);
 
-	blockNum++;
+
+
 
 	$(".input").val('');
 
@@ -103,7 +118,7 @@ function test () {
 
 function reWriteHistory (block) {
 	var historyItem = $('.history-item-template').clone();
-
+	// $('.animation').append(block.result["0"].outerHTML);
 	historyItem.find('.history-grid').append(block.result["0"].outerHTML);
 	historyItem.find('.author').html('Autor: ' + block.author);
 	historyItem.find('.block-num').html('Bloque n°: ' + block.index);
@@ -120,8 +135,34 @@ function hideShowRegister () {
 
     var scroll = $(window).scrollTop();
     
-    scroll < 50 ? $('.register').fadeIn() : $('.register').fadeOut();
+    if (scroll < 50 && blockNum >= 2) {
+    	$('.register').fadeIn();
+    } else {
+    	$('.register').fadeOut();
+    }
+
 }
+
+// var animationBlock = 0;
+// function animate () {
+// 		console.log(animationBlock)
+
+// 		if (animationBlock == chain.chain.length ) {
+// 			animationBlock = 0;
+// 			$('.animation').children().fadeOut();
+// 			animate();
+// 		} else {
+
+// 			var currentAnimationBlock = $($('.animation').children()[animationBlock]);
+
+// 			currentAnimationBlock.fadeIn();
+// 			animationBlock++;
+// 			setTimeout(function() { animate ()}, 1000);
+
+// 		}
+
+
+// }
 
 $(document).ready(function () {
 
@@ -133,8 +174,9 @@ $(document).ready(function () {
 	$(".input").on('keypress', function (e) {
 
 		e.target.value != '' && e.originalEvent.charCode == '13' && generateBlock(e.target.value);
-		e.target.value == 'p' && test();
 		blockNum == 2 && $('.register').fadeIn();
+
+
 	});
 
 	$('.register').click(function () {
@@ -144,6 +186,7 @@ $(document).ready(function () {
 	$(window).scroll(function () {
 		hideShowRegister();
 	});
+
 });
 
 

@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Roboto Slab";
+    src:url("font/RobotoSlab-Regular.ttf");
+}
+
+* {
+	font-family: 'Roboto Slab', serif;
+}
+
+body {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.history {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.history-item {
+	margin:20px;
+}
+
+.history-item-info {
+	font-size: 12px;
+    margin-left: 10px;
+}
+
+.history-item-info div {
+	margin-bottom: 6px;
+}
+
+.history-item .grid {
+	max-width: 100px;
+}
+
+.history-item .grid-block {
+	width: 20px;
+	height: 20px;
+	margin: 2.5px;
+}
+
+.hash, .previous-hash{
+	word-wrap: break-word;
+    max-width: 145px;
+}
+
+.grid {
+    max-width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-block {
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	background-color: #888888;
+}
+
+.input {
+	margin-bottom: 5px;
+	width: 145px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.register {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	display: none;
+}
+
+.register:hover {
+	cursor: pointer;
+}
+
+.animation .grid {
+	position: absolute;
+	display: none;
+}
+
+.animation .grid-block {
+	display: inline-flex;
+}
+
+@media (max-width: 430px) {
+
+
+	.history-item {
+	    display: flex;
+	    flex-direction: column;
+	    text-align: center;
+	    align-items: center;
+	}
+
+	.history-item-info {
+	    display: flex;
+	    margin-left: 10px;
+	    flex-direction: column;
+	    margin-top: 20px;
+	    align-items: center;
+	}
+}
