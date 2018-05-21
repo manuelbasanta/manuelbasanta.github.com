@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Roboto Slab";
+    src:url("font/RobotoSlab-Regular.ttf");
+}
+
+* {
+	font-family: 'Roboto Slab', serif;
+}
+
+body {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+	margin-top: 30px;
+}
+
+button {
+	border: 1px solid #d8d8d8;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.container {
+	width: 400px;
+	height: 500px;
+	position: relative;
+}
+
+.posi {
+	position: absolute;
+}
+
+.history-item .container .posi {
+	width: 50%;
+	height: 50%;
+}
+
+.history-item .container {
+	width: 50%;
+	height: 50%;
+}
+
+.history-item {
+	    
+}
+
+.history-item-info {
+	font-size: 12px;
+}
+
+.history-item-info div {
+	padding: 20px 50px;
+}
+
+.history-item .grid {
+	max-width: 100px;
+}
+
+.history-item .grid-block {
+	width: 20px;
+	height: 20px;
+	margin: 2.5px;
+}
+
+.history {
+	margin-top: 20px;
+	    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+
+
+@media (max-width: 430px) {
+
+
+	.history-item {
+	    display: flex;
+	    flex-direction: column;
+	    text-align: center;
+	    align-items: center;
+	}
+
+	.history-item-info {
+	    display: flex;
+	    margin-left: 10px;
+	    flex-direction: column;
+	    margin-top: 20px;
+	    align-items: center;
+	}
+}
