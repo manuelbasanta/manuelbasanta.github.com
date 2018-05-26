@@ -13,8 +13,8 @@ $(document).ready(function () {
 
             success: function (data) {
 
-                $("#quotes").html('"' + data.quote + '"');
-                $("#author").html(data.author);
+                $("#quotes").html('"' + data[0].quote + '"');
+                $("#author").html(data[0].author);
                 $("#tw").html("<a class=\x22twitter-share-button\x22" +
                     "href=\x22https://twitter.com/intent/tweet?text=" + "'" + data.quote + "'  " + data.author + "\x22" + " " + "target=\x22_blank\x22><i class=\x22fa fa-twitter iconos\x22" + "aria-hidden=\x22true\x22></i></a>");
                 
