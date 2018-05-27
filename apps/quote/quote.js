@@ -16,7 +16,7 @@ $(document).ready(function () {
                 $("#quotes").html('"' + data[0].quote + '"');
                 $("#author").html(data[0].author);
                 $("#tw").html("<a class=\x22twitter-share-button\x22" +
-                    "href=\x22https://twitter.com/intent/tweet?text=" + "'" + data[0].quote + "'  " + data[0].author + " Made with https://manuelbasanta.github.io/apps/quote/quote.html\x22" + " " + "target=\x22_blank\x22><i class=\x22fa fa-twitter iconos\x22" + "aria-hidden=\x22true\x22></i></a>");
+                    "href=\x22https://twitter.com/intent/tweet?text=" + "'" + data[0].quote + "'  " + data[0].author + " -- Created with https://manuelbasanta.github.io/apps/quote/quote.html\x22" + " " + "target=\x22_blank\x22><i class=\x22fa fa-twitter iconos\x22" + "aria-hidden=\x22true\x22></i></a>");
                 
                         if (color) {
             $(".par").animate({
