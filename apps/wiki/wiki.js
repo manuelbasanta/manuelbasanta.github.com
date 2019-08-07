@@ -36,7 +36,7 @@ $(document).ready(function () {
                      $("#results").fadeIn("slow");
                  } else {
                      for (var i = 0; i < json[1].length; i++) {
-                         $("#results").append("<div class=\"todo\"><div class=\"tado\">" + json[1][i] + "</div><div class=\"desc\">" + json[2][i] + "<a target=\"_blank\"href=\"" + json[3][i] + "\"><div class=\"bot\"> Go to article </div></a></div></div>");
+                         $("#results").append("<div class=\"todo\"><div class=\"tado\">" + json[1][i] + "</div><div class=\"desc\">" + json[2][i] + "<a target=\"_blank\"href=\"" + json[3][i] + "\"><div class=\"bot pointer\"> Go to article </div></a></div></div>");
                      }
                      $("#results").fadeIn("slow");
                  }

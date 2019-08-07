@@ -2,6 +2,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 main {
     display: flex;
     flex-direction: column;
