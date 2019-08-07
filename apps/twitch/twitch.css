@@ -4,6 +4,10 @@ body {
     width: 100%;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 main {
     display: flex;
     flex-direction: column;

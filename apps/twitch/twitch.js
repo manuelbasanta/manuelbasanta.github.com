@@ -21,7 +21,7 @@ $(document).ready(function () {
         }
         ajaxero(function (data) {
             console.log(data);
-            $("#todos").append("<div class=\"box\" id=\"box" + channel + "\">" + "<a href=\"https://www.twitch.tv/" + channel + "\" target=\"_blank\">" + "<div class=\"int\" id=\"" + channel + "\">Loading...</div>" + "</a>" + channel + ".</div>");
+            $("#todos").append("<div class=\"box pointer\" id=\"box" + channel + "\">" + "<a href=\"https://www.twitch.tv/" + channel + "\" target=\"_blank\">" + "<div class=\"int pointer\" id=\"" + channel + "\">Loading...</div>" + "</a>" + channel + ".</div>");
 
 
             if (data.stream == null) {
